@@ -1,7 +1,7 @@
 import {useState } from 'react'
 import './App.css'
 
-import UserContext from "./UserContext.js"
+import UserContext from "./components/UserContext.js"
 import ProfilePage from './components/ProfilePage.jsx'
 
 
