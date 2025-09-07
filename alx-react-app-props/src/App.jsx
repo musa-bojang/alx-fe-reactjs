@@ -6,7 +6,7 @@ import ProfilePage from './components/ProfilePage.jsx'
 
 
 function App() {
-  const [count, setCount] = useState(0)
+  
   const userData = { name: "Jane Doe 3", email: "jane.doe@example.com" };
   return (
     <>
