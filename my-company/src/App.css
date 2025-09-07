@@ -41,16 +41,16 @@
   color: #888;
 }
 
-.navbar {
+/* .navbar {
   display: flex;
   
   justify-content: center;
   gap: 2rem;
   margin-bottom: 2rem;
-}
-navbar ul {
+} */
+.navbar ul {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 2rem;
   padding: 0;
 }
