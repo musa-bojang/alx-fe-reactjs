@@ -15,15 +15,15 @@ function App() {
     <>
       <Router>
       <Routes>
-      <Route path="/" element={<h2>Welcome to the Recipe App</h2>} />  
+      <Route path="/" element={<RecipeList />} />  
       <Route path="*" element={<h2>Not found</h2>} />
       {/* <Route path="/recipes/:id" element={<h2>Recipe Details Page</h2>} /> */}
       <Route path="/recipes/:id" element={<RecipeDetails/>} />
       
       </Routes>
       
-      <RecipeList />
-      <AddRecipeForm />
+      
+      
       </Router>
     </>
   )

@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import useRecipeStore from "./recipeStore";
 import { useState, useEffect, use } from "react";
 
@@ -29,6 +29,8 @@ function EditRecipeForm() {
     <input type="text" value={title} onChange={(e)=> setTitle(e.target.value)} />
     <textarea  value={description} onChange={(e) => setDescription(e.target.value)}></textarea>
     <button type="submit"> Update recipe</button>
+    <Link to="/"><button>Back to recipes</button></Link>
+    
 </form>
   )
 }           
