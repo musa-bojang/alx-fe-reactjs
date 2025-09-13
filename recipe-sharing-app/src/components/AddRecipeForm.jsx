@@ -20,5 +20,6 @@ function AddRecipeForm() {
         <button type="submit"> Add recipe</button>
     </form>
   );
-}   
+   
+}
 export default AddRecipeForm;
