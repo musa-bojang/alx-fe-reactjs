@@ -24,7 +24,18 @@ const api = axios.create({
 //     }
 //     return await response.json();
 // }
-export async function fetchUserData(username){
-    const response = await api.get(`/users/${username}`);
-    return response.data;
-}
+// export async function fetchUserData(username, location, repos){
+//     const response = await api.get(`/users/${username}/${location}/${repos}`);
+//     return response.data;
+// }
+
+export async function fetchUserData({ username, location, minRepos }) {
+    let query = "";
+  
+    if (username) query += `${username} `;
+    if (location) query += `location:${location} `;
+    if (minRepos) query += `repos:>${minRepos}`;
+  
+    const response = await api.get(`/search/users?q=${encodeURIComponent(query.trim())}`);
+    return response.data.items; // GitHub returns an object with 'items' array
+  }
