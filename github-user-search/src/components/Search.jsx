@@ -44,7 +44,7 @@ const [error, setError ] = useState(null);
           <img src={newData.avatar_url} alt="User avatar" width="100" />
         </div>
       ) : (
-        <p>No user data yet</p>
+        <p>Looks like we cant find the user</p>
       )}
     </>
   )
