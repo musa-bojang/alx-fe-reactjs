@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+.navtop{
+ margin: auto;
+ margin-left: 50px;
+ padding: 20px;
+ background-color: #FFFFFF;
+}   
+.navList ul{
+ display: flex;
+ gap: 40px;
+ justify-content: center;
+ list-style: none;
+ 
+}
+.navList ul li {
+    text-align: center;
+    color: #1E1E1E;
+    /* padding: 10px; */
+    padding-right: 5px;
+    padding-left: 5px;
+}
+.navList li a {
+    text-decoration: none;
+    color: #1E1E1E;
+    /* font-weight: 500;
+    background-color: black; */
+}
+.signinBtn{
+    border: solid 1px #1E1E1E;
+    padding: 0px;
+    border-radius: 5px;
+}
+
+.registerBtn{
+    background-color:  #1E1E1E;
+    padding: 0px;
+    border-radius: 5px;
+   color: white;
+   
+}
